@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    /* ===== HERO ===== */
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://images.unsplash.com/photo-1519389950473-47ba0277781c") no-repeat center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      background: #ff6f61;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    header a:hover {
+      background: #e53935;
+      transform: scale(1.05);
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      padding: 12px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    section p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* ===== SKILLS / HOBBIES CARDS ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* ===== CONTACT BUTTON ===== */
+    .contact-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff6f61;
+      color: white;
+      border-radius: 30px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #e53935;
+      transform: scale(1.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>John Doe</h1>
+    <p>Web Developer | Designer | Learner</p>
+    <a href="#about">Explore My Work</a>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am John Doe, a passionate web developer who loves building modern, responsive, and creative websites. I enjoy solving problems and turning ideas into digital solutions.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <p>Node.js, Express, SQL, MongoDB</p>
+      </div>
+      <div class="card">
+        <h3>Other</h3>
+        <p>Git, APIs, Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📚 Reading</h3>
+        <p>Love exploring tech blogs and novels.</p>
+      </div>
+      <div class="card">
+        <h3>✈️ Traveling</h3>
+        <p>Exploring new cultures and cuisines.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Coding</h3>
+        <p>Experimenting with new frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: john@example.com</p>
+    <a href="mailto:john@example.com" class="contact-btn">Send Message</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 John Doe | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
